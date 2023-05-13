@@ -17,7 +17,11 @@ git clone https://github.com/Vinh911/jupyter-docker-template.git
 ````
 cd jupyter-docker-template
 ````
-3. Start the Docker container using docker-compose:
+
+**Note:** You can change the default token in the `Dockerfile` by modifying the `CMD` instruction to include the `--NotebookApp.token=mysecretpassword` option. Be sure to rebuild the Docker image after making any changes to the `Dockerfile`.
+
+
+4. Start the Docker container using docker-compose:
 ````
 docker-compose up
 ````
